@@ -21,9 +21,9 @@ layers = 2
 keymap = [
     [
         ["Escape", "Kc1", "Kc2", "Kc3", "Kc4", "Kc5", "Kc6", "Kc7", "Kc8", "Kc9", "Kc0", "Minus", "Equal", "Backspace", "Insert"],
-        ["Tab", "Q", "W", "E", "R", "T", "Z", "U", "I", "O", "P", "LeftBracket", "RightBracket", "_", "Delete"],
-        ["CapsLock", "A", "S", "D", "F", "G", "H", "J", "K", "L", "Semicolon", "Quote", "NonusBackslash", "Enter", "PageUp"],
-        ["LShift", "NonusBackslash", "Y", "X", "C", "V", "B", "N", "M", "Comma", "Dot", "Slash", "Rshift", "Up", "PageDown"],
+        ["Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "LeftBracket", "RightBracket", "_", "Delete"],
+        ["CapsLock", "A", "S", "D", "F", "G", "H", "J", "K", "L", "Semicolon", "Quote", "NonusHash", "Enter", "PageUp"],
+        ["LShift", "NonusBackslash", "Z", "X", "C", "V", "B", "N", "M", "Comma", "Dot", "Slash", "Rshift", "Up", "PageDown"],
         ["LCTRL", "LGUI", "LALT", "_", "_", "SPACE", "_", "_", "_", "RAlt", "MO(1)", "RCtrl", "Left", "Down", "Right"]
     ],
     [
