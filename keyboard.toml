@@ -40,7 +40,7 @@ input_pins = []
 output_pins = []
 
 # Peripheral 
-[split.peripheral]
+[[split.peripheral]]
 # Matrix definition
 rows = 5
 cols = 15
