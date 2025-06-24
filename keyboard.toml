@@ -7,10 +7,10 @@ product_id = 0x4643
 manufacturer = "FoxTimo"
 chip = "nrf52840"
 
-#[matrix]
+[matrix]
 # Input and output pins are mandatory
-#input_pins = ["P1_00", "P0_24", "P0_22", "P1_07", "P1_02"] # rows
-#output_pins = ["P0_11", "P1_04", "P1_06", "P0_09", "P0_10", "P1_11", "P1_13", "P1_15", "P0_02", "P0_29", "P0_31", "P0_06", "P0_08", "P0_17", "P0_20"] # columns
+input_pins = ["P1_00", "P0_24", "P0_22", "P1_07", "P1_02"] # rows
+output_pins = ["P0_11", "P1_04", "P1_06", "P0_09", "P0_10", "P1_11", "P1_13", "P1_15", "P0_02", "P0_29", "P0_31", "P0_06", "P0_08", "P0_17", "P0_20"] # columns
 # WARNING: Currently row2col/col2row is set in RMK's feature gate, configs here do nothing actually
 # row2col = true
 
@@ -18,43 +18,43 @@ chip = "nrf52840"
 enabled = true
 battery_adc_pin = "vddh"
 
-[split]
+#[split]
 # split connection type
-connection = "ble"
+#connection = "ble"
 
 # Split central
-[split.central]
+#[split.central]
 # Central's matrix definition and offsets
-rows = 0
-cols = 0
-row_offset = 0
-col_offset = 0
+#rows = 0
+#cols = 0
+#row_offset = 0
+#col_offset = 0
 
 # Central's ble addr
-ble_addr = [0xB2, 0x4F, 0x3A, 0x89, 0xC1, 0xC0]
+#ble_addr = [0xB2, 0x4F, 0x3A, 0x89, 0xC1, 0xC0]
 
 # Central's matrix
-[split.central.matrix]
-matrix_type = "normal"
-input_pins = []
-output_pins = []
+#[split.central.matrix]
+#matrix_type = "normal"
+#input_pins = []
+#output_pins = []
 
 # Peripheral 
-[[split.peripheral]]
+#[[split.peripheral]]
 # Matrix definition
-rows = 5
-cols = 15
-row_offset = 0
-col_offset = 0
+#rows = 5
+#cols = 15
+#row_offset = 0
+#col_offset = 0
 
 # Peripheral's ble addr
-ble_addr = [0xF6, 0xDA, 0x11, 0x7C, 0x02, 0xC0]
+#ble_addr = [0xF6, 0xDA, 0x11, 0x7C, 0x02, 0xC0]
 
 # Peripheral matrix definition
-[split.peripheral.matrix]
-matrix_type = "normal"
-input_pins = ["P1_00", "P0_24", "P0_22", "P1_07", "P1_02"] # rows
-output_pins = ["P0_11", "P1_04", "P1_06", "P0_09", "P0_10", "P1_11", "P1_13", "P1_15", "P0_02", "P0_29", "P0_31", "P0_06", "P0_08", "P0_17", "P0_20"] # columns
+#[split.peripheral.matrix]
+#matrix_type = "normal"
+#input_pins = ["P1_00", "P0_24", "P0_22", "P1_07", "P1_02"] # rows
+#output_pins = ["P0_11", "P1_04", "P1_06", "P0_09", "P0_10", "P1_11", "P1_13", "P1_15", "P0_02", "P0_29", "P0_31", "P0_06", "P0_08", "P0_17", "P0_20"] # columns
 
 
 [layout]
